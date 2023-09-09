@@ -1,3 +1,14 @@
-export default function App() {
-  return <h1 className="">Hello world!</h1>;
+import React from "react";
+import Navbar from "./components/Navbar";
+import Home from "./components/Home";
+
+function App() {
+  return (
+    <>
+      <Navbar />
+      <Home />
+    </>
+  );
 }
+
+export default App;
