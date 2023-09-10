@@ -4,31 +4,34 @@ import { Link } from "react-scroll";
 import logo from "../assets/Agency/logo.png";
 
 export default function Navbar() {
-  const [openManu, setOpenManu] = useState(false);
+  const [isopenManu, setIsOpenManu] = useState(false);
   const [isSticky, setIsSticky] = useState(false);
 
   //   toggler
 
+  console.log(isSticky);
+
   const toggle = () => {
-    setOpenManu(!openManu);
+    setIsOpenManu(!isopenManu);
   };
 
   useEffect(() => {
-    const handleScrolly = () => {
+    const handleScroll = () => {
       if (window.scrollY > 100) {
         setIsSticky(true);
       } else {
-        setIsSticky(true);
+        setIsSticky(false);
       }
-
-      window.addEventListener("scroll", handleScrolly);
-
-      return () => {
-        window.addEventListener("scroll", handleScrolly);
-      };
     };
-  }, []);
 
+    // Add the event listener
+    window.addEventListener("scroll", handleScroll);
+
+    // Remove the event listener when the component unmounts
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []); 
   const naviItem = [
     { link: "Home", path: "home" },
     { link: "Service", path: "service" },
@@ -40,10 +43,10 @@ export default function Navbar() {
 
   return (
     <>
-      <header className="w-full bg-white md:bg-transparent fixed top-0 left-0 right-0">
+      <header className="w-full bg-white md:bg-transparent fixed top-0 left-0 right- z-[1000] ">
         <nav
-          className={`px-4 py-5 sm:px-6 sm:py-6 lg:px-14 ${
-            isSticky ? "static top-0 left-0 ring-0 bg-white duration-300" : ""
+          className={`px-4 py-4 lg:px-14 2xl:px20${
+            isSticky ? " static top-0 left-0 ring-0 bg-slate-100 transition-colors duration-300" : ""
           }`}
         >
           <div className=" flex items-center justify-between text-base gap-8">
@@ -54,7 +57,7 @@ export default function Navbar() {
             <ul className=" md:flex md:font-medium  space-x-3 hidden cursor-pointer">
               {naviItem.map(({ path, link }) => (
                 <Link
-                  className=" block text-base text-gray-900 hover:text-brandPrimar first:font-medium md:hover:text-brandPrimar "
+                  className=" block text-base text-gray-900 hover:text-brandPrimar first:font-medium md:hover:text-brandPrimar select-none"
                   to={path}
                   key={path}
                   spy={true}
@@ -78,7 +81,7 @@ export default function Navbar() {
 
             <div className=" md:hidden">
               <button className=" md:hidden" onClick={toggle}>
-                {openManu ? (
+                {isopenManu ? (
                   <FaXmark className=" h-7 w-7 text-neutralDGrey" />
                 ) : (
                   <FaBars className=" h-7 w-7 text-neutralDGrey" />
@@ -86,10 +89,12 @@ export default function Navbar() {
               </button>
             </div>
           </div>
+
           {/* nav item for mobile device */}
+
           <div
             className={` space-y-8 mt-[10rem] text-center bg-brandPrimar  ${
-              openManu ? "block top-0 left-0 right-0 " : " hidden"
+              isopenManu ? "block top-0 left-0 right-0 " : " hidden"
             } `}
           >
             {naviItem.map(({ path, link }) => (

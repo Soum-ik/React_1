@@ -6,4 +6,7 @@
   .buttom {
     @apply bg-brandPrimar text-white rounded px-3 py-2 transition-all duration-1000 hover:text-neutralDGrey;
   }
+  .container {
+    @apply md:px-14 px-4 py-10 max-w-screen-2xl;
+  }
 }
