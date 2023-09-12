@@ -10,6 +10,12 @@
     @apply md:px-14 px-4 py-10 max-w-screen-2xl;
   }
   .heading {
-    @apply text-neutralDGrey text-3xl font-semibold mb-2 px-2
+    @apply text-neutralDGrey text-3xl font-semibold mb-2 px-2;
+  }
+  .mini_title{
+    @apply text-neutralDGrey text-lg font-semibold mb-2 px-2
+  }
+  .acchivement {
+    @apply flex items-center gap-4 flex-col md:flex-row;
   }
 }

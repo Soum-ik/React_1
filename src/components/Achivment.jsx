@@ -20,34 +20,34 @@ export default function Achivment() {
             
           <div className=" md:w-1/2 mx-auto flex sm:flex-row flex-col sm:items-center justify-around gap-6">
             <div className=" space-y-8"> 
-              <div className="flex items-center gap-4">
+              <div className="acchivement">
                   <img src={icon1} alt="" />
-                <div>
-                  <p>2,245,341</p>
-                  <p>Number</p>
+                <div className="text-center">
+                  <p className="mini_title">2,245,341</p>
+                  <p className="mini_title">Number</p>
                 </div>
               </div>
-              <div className="flex items-center gap-4">
+              <div className="acchivement">
                   <img src={icon2} alt="" />
-                <div>
-                  <p>54,545 </p>
-                  <p>clubs</p>
+                <div className="text-center">
+                  <p className="mini_title">54,545 </p>
+                  <p className="mini_title">clubs</p>
                 </div>
               </div>  
             </div>            
             <div className=" space-y-8 "> 
-              <div className="flex items-center gap-4">
+              <div className="acchivement">
                   <img src={icon3} alt="" />
-                <div>
-                  <p>2,245,341</p>
-                  <p>Number</p>
+                <div className="text-center">
+                  <p className="mini_title">2,245,341</p>
+                  <p className="mini_title">Number</p>
                 </div>
               </div>
-              <div className="flex items-center gap-4">
+              <div className="acchivement">
                   <img src={icon2} alt="" />
-                <div>
-                  <p>54,545 </p>
-                  <p>clubs</p>
+                <div className="text-center">
+                  <p className="mini_title">54,545 </p>
+                  <p className="mini_title">clubs</p>
                 </div>
               </div>  
             </div>            

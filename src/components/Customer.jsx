@@ -1,15 +1,21 @@
 import customer from "../assets/Agency/image_9.png";
 import customer_logo from "../assets/Agency/Frame_10.png";
 
+/**
+ *
+ *
+ * @export
+ * @return {*} 
+ */
 export default function Customer() {
   return (
     <>
-      <div className="py-8 px-4 md:px-8 max-w-screen-2xl mx-auto mt-9">
-        <div className=" flex items-center justify-center gap-8 flex-col md:flex-row ">
+      <div className="py-8 px-4 md:px-8 max-w-screen-4xl mx-auto mt-9">
+        <div className=" flex items-center justify-center gap-8 flex-col md:flex-row min-w-full">
           <div>
             <img src={customer} alt="" className="" />
           </div>
-          <div className="max-w-lg text-neutralDGrey space-y-1">
+          <div className=" max-w-4xl text-neutralDGrey space-y-1 px-4 md:w-11/12 lg:max-w-4xl">
             <p className="">
               Maecenas dignissim justo eget nulla rutrum molestie. Maecenas
               lobortis sem dui, vel rutrum risus tincidunt ullamcorper. Proin eu
@@ -25,11 +31,11 @@ export default function Customer() {
             </p>
             <h1 className="text-xl text-brandPrimar font-semibold">Tim Smith</h1>
             <p className="text-neutralDGrey space-y-3">British Dragon Boat Racing Association</p>
-            <div className="flex flex-col space-y-2 md:flex-row sm:space-y-0">
+            <div className="flex flex-col space-y-2 md:flex-row sm:space-y-0 gap-3">
                 <div className=" mt-3">
                     <img src={customer_logo} alt="" />
                 </div>
-                <button className="text-brandPrimar ">Meet all customer -> </button>
+                <button className="text-brandPrimar ">Meet all customer  </button>
             </div>
           </div>
         </div>

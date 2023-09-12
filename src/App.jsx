@@ -6,6 +6,9 @@ import About from "./components/about";
 import Customer from "./components/Customer";
 import Achivment from "./components/Achivment";
 import Unlock from "./components/unlock";
+import Community from "./components/communit_update";
+import Decription from "./components/Decription";
+import Footer from "./components/footer";
 
 function App() {
   return (
@@ -17,6 +20,9 @@ function App() {
       <Achivment />
       <Unlock/>
       <Customer/>
+      <Community/>
+      <Decription/>
+      <Footer/>
     </>
   );
 }

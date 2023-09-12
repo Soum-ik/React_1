@@ -16,7 +16,7 @@ export default function Service() {
       title: "National Associations",
       decription:
         "Our membership management software provides full automation of membership renewals and payments",
-      img: "../assets/Agency/Icon2.png",
+      // img: "../assets/Agency/Icon2.png",
       Image: "/src/assets/Agency/Icon2.png",
     },
     {
@@ -56,7 +56,7 @@ export default function Service() {
             Who is Nextcent suitable for?
           </p>
         </div>
-
+                  
         {/* card  */}
         <div className="mt-10 grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 w-10/12 mx-auto gap-12 selection:text-brandPrimar">
           {services.map((service) => (
