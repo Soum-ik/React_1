@@ -57,7 +57,7 @@ export default function Navbar() {
             <ul className=" md:flex md:font-medium  space-x-3 hidden cursor-pointer">
               {naviItem.map(({ path, link }) => (
                 <Link
-                  className=" block text-base text-gray-900 hover:text-brandPrimar first:font-medium md:hover:text-brandPrimar select-none"
+                  className=" block text-xl text-gray-900 hover:text-brandPrimar first:font-medium md:hover:text-brandPrimar select-none"
                   to={path}
                   key={path}
                   spy={true}

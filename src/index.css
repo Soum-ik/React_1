@@ -9,4 +9,7 @@
   .container {
     @apply md:px-14 px-4 py-10 max-w-screen-2xl;
   }
+  .heading {
+    @apply text-neutralDGrey text-3xl font-semibold mb-2 px-2
+  }
 }
