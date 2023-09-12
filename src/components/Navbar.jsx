@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { FaBars, FaXmark } from "react-icons/fa6";
 import { Link } from "react-scroll";
-// import logo from "../assets/Agency/logo.png";
+import logo from "../../src/assets/Agency/Logo.png";
 
 export default function Navbar() {
   const [isopenManu, setIsOpenManu] = useState(false);
@@ -51,7 +51,7 @@ export default function Navbar() {
         >
           <div className=" flex items-center justify-between text-base gap-8">
             <a href="">
-              {/* <img src={logo} alt="" /> */}
+              <img src={logo} alt="" />
             </a>
 
             <ul className=" md:flex md:font-medium  space-x-3 hidden cursor-pointer">
