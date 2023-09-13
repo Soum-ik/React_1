@@ -20,7 +20,7 @@ function App() {
       <Achivment />
       <Unlock/>
       <Customer/>
-      {/* <Community/> */}
+      <Community/>
       <Decription/>
       <Footer/>
     </>
