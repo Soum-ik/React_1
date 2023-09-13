@@ -9,6 +9,7 @@ import Unlock from "./components/unlock";
 import Community from "./components/communit_update";
 import Decription from "./components/Decription";
 import Footer from "./components/footer";
+import Users from "./components/use";
 
 function App() {
   return (
@@ -16,11 +17,12 @@ function App() {
       <Navbar />
       <Home />
       <Service />
-      <Community/>
       <About />
       <Achivment />
       <Unlock/>
       <Customer/>
+      <Community/>
+      <Users/>
       <Decription/>
       <Footer/>
     </>
