@@ -16,11 +16,11 @@ function App() {
       <Navbar />
       <Home />
       <Service />
+      <Community/>
       <About />
       <Achivment />
       <Unlock/>
       <Customer/>
-      <Community/>
       <Decription/>
       <Footer/>
     </>
