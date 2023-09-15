@@ -2,18 +2,18 @@ export default function Users() {
   const Images = [
     {
       id: 1,
-      Image: "/src/assets/Agency/img1.png",
+      Image: "src/assets/Agency/img1.png",
       tittle: "Creating Streamlined Safeguarding Processes with OneRen",
     },
     {
       id: 2,
-      Image: "/src/assets/Agency/img2.png",
+      Image: "src/assets/Agency/img2.png",
       tittle:
         "What are your safeguarding responsibilities and how can you manage them?",
     },
     {
       id: 3,
-      Image: "/src/assets/Agency/img3.png",
+      Image: "src/assets/Agency/img3.png",
       tittle: "Revamping the Membership Model with Triathlon Australia",
     },
   ];

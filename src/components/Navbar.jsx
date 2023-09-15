@@ -46,7 +46,7 @@ export default function Navbar() {
       <header className="w-full bg-white md:bg-transparent fixed top-0 left-0 right- z-[1000] ">
         <nav
           className={`px-4 py-4 lg:px-14 2xl:px20${
-            isSticky ? " static top-0 left-0 ring-0  bg-slate-50 transition-colors duration-300" : "blur-sm"
+            isSticky ? " static top-0 left-0 ring-0 bg-transparent transition-colors duration-300 backdrop-blur-sm shadow-md" : ""
           }`}
         >
           <div className=" flex items-center justify-between text-base gap-8">
