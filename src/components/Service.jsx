@@ -1,4 +1,4 @@
-import client from "../assets/Agency/client.png";
+import client from "../assets/image/client.png";
 // import icon1 from "../../src/assets";
 
 export default function Service() {
@@ -8,24 +8,24 @@ export default function Service() {
       title: "Membership Organisations",
       decription:
         "Our membership management software provides full automation of membership renewals and payments",
-      // img: "../assets/Agency/Icon.png",
-      Image: "/src/assets/Agency/Icon.png",
+      // img: "../assets/image/Icon.png",
+      Image: "/src/assets/image/Icon.png",
     },
     {
       id: 2,
       title: "National Associations",
       decription:
         "Our membership management software provides full automation of membership renewals and payments",
-      // img: "../assets/Agency/Icon2.png",
-      Image: "/src/assets/Agency/Icon2.png",
+      // img: "../assets/image/Icon2.png",
+      Image: "/src/assets/image/Icon2.png",
     },
     {
       id: 3,
       title: "Clubs And Groups",
       decription:
         "Our membership management software provides full automation of membership renewals and payments",
-      // img: "../assets/Agency/Icon3.png",
-      Image: "/src/assets/Agency/Icon3.png",
+      // img: "../assets/image/Icon3.png",
+      Image: "/src/assets/image/Icon3.png",
     },
   ];
 

@@ -10,10 +10,14 @@ import Community from "./components/communit_update";
 import Decription from "./components/Decription";
 import Footer from "./components/footer";
 import Users from "./components/use";
+import SingUp from "./components/SingUp";
+import TextInput from "./components/textInput";
+import {} from "react-dom"
 
 function App() {
   return (
     <>
+    
       <Navbar />
       <Home />
       <Service />
@@ -25,6 +29,7 @@ function App() {
       <Users/>
       <Decription/>
       <Footer/>
+      <SingUp/>
     </>
   );
 }

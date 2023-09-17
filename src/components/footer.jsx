@@ -1,6 +1,6 @@
 // import { useState } from "react";
-import img from "../assets/Agency/Logo.png";
-import img2 from "../assets/Agency/social.png";
+import img from "../assets/image/Logo.png";
+import img2 from "../assets/image/social.png";
 
 export default function Footer() {
     // const [footer, setFooter] = useState("");
@@ -53,7 +53,7 @@ export default function Footer() {
                             placeholder="Your email address"
                             name=""
                             id=""
-                            onClick={(e) =>set}
+                            onChange={(e) => e.target.value}
                         />
                         </div>
                     </div>

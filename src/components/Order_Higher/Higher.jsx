@@ -1,5 +1,5 @@
-import aboutImage from "../../assets/Agency/Frame_35.png";
-import unlock from "../../assets/Agency/pana.png";
+import aboutImage from "../../assets/image/Frame_35.png";
+import unlock from "../../assets/image/pana.png";
 
 export default function higerOrder({ titel, deription, button, img }) {
   const info = () => {

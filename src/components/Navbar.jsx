@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { FaBars, FaXmark } from "react-icons/fa6";
 import { Link } from "react-scroll";
-import logo from "../../src/assets/Agency/Logo.png";
+import logo from "../../src/assets/image/Logo.png";
 
 export default function Navbar() {
   const [isopenManu, setIsOpenManu] = useState(false);
@@ -16,7 +16,7 @@ export default function Navbar() {
   };
 
   useEffect(() => {
-    const handleScroll = () => {
+    const handleScroll =  () => {
       if (window.scrollY > 100) {
         setIsSticky(true);
       } else {

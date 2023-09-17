@@ -16,24 +16,24 @@ export default {
         gray900: "#18191F",
       },
       animation: {
-        big: "big 7s infinite",
+        round: " round 8s infinite",
       },
       keyframes: {
-        big: {
+        round: {
           "0%": {
-            transfrom: "scale(1)",
+            transform: "translate(0px, 0px)",
           },
-          "25%": {
-            transfrom: "scale(1.2)",
+          "33%": {
+            transform: "translate(0px, -20px) ",
           },
-          "50%": {
-            transfrom: "scale(1.25)",
+          "66%": {
+            transform: "translate(0px, 0px) ",
           },
-          "60%": {
-            transfrom: "scale(1)",
+          "88%": {
+            transform: "translate(0px, -5px) ",
           },
           "100%": {
-            transfrom: "scale(1)",
+            transform: "translate(0px, 0px)",
           },
         },
       },
@@ -41,3 +41,7 @@ export default {
   },
   plugins: [require("flowbite/plugin")],
 };
+
+
+//{
+ 
