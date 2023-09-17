@@ -15,6 +15,28 @@ export default {
         neutralGrey: "#717171",
         gray900: "#18191F",
       },
+      animation: {
+        big: "big 7s infinite",
+      },
+      keyframes: {
+        big: {
+          "0%": {
+            transfrom: "scale(1)",
+          },
+          "25%": {
+            transfrom: "scale(1.2)",
+          },
+          "50%": {
+            transfrom: "scale(1.25)",
+          },
+          "60%": {
+            transfrom: "scale(1)",
+          },
+          "100%": {
+            transfrom: "scale(1)",
+          },
+        },
+      },
     },
   },
   plugins: [require("flowbite/plugin")],

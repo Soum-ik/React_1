@@ -14,7 +14,7 @@ export default function higerOrder({ titel, deription, button, img }) {
     <>
       <div className="mt-10 px-8 md:px-8 mx-auto py-8">
         <div className=" md:flex items-center justify-center gap-12 md:mx-auto">
-          <div className=" selection:select-none">
+          <div className=" selection:select-none animate-bigger">
             <img src={info()} alt="" className=" " />
           </div>
           <div className="max-w-lg space-y-6">

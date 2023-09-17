@@ -12,7 +12,7 @@ export default function Customer() {
     <>
       <div className="py-8 px-4 md:px-8 max-w-screen-4xl mx-auto mt-9">
         <div className=" flex items-center justify-center gap-8 flex-col md:flex-row min-w-full">
-          <div>
+          <div className=" animate-big">
             <img src={customer} alt="" className="" />
           </div>
           <div className=" max-w-4xl text-neutralDGrey space-y-1 px-4 md:w-11/12 lg:max-w-4xl">
