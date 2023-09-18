@@ -61,7 +61,7 @@ export default function SingUpForm() {
         />
         {/* <CheckBox text={"I agree to the Terms & Conditions"}/> */}
         {/* <button type='submit'>Submit Now</button> */}
-        <button type="" className="buttom mx-7">Submit Now</button>
+        <button type="submit" className="buttom mx-7">Submit Now</button>
         {error && <p className="mx-7 text-center rounded-xl box-border px-2 py-2 bg-red-400 shadow-lg text-white">{error}</p>}
         <h1 className="mx-7">Already have an account? {<Link to="/login" className=" text-brandPrimar">Login </Link>} Now  instead</h1>
       </form>

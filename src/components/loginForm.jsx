@@ -6,17 +6,18 @@ import { Link, useNavigate } from "react-router-dom";
 // import { useNavigate } from "react-router-dom";
 
 export default function LoginPage() {
-  const [email, setEmail] = useState();
-  const [password, setPassword] = useState();
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
   const navigate = useNavigate();
 
-  const handleChange = () => {
-    
+  const handleChange = (e) => {
+    e.preventDefault();
+    return navigate("/")
   };
 
   return (
     <>
-      <form action="" className=" space-y-6 mt-12">
+      <form action="" className=" space-y-6 mt-12" onSubmit={handleChange} >
         <TextInput
           type="email"
           placeholder="enter your mail"
@@ -33,8 +34,17 @@ export default function LoginPage() {
           icon={<RiLockPasswordFill />}
           onChange={(e) => setPassword(e.target.value)}
         />
-
-        <h1 className="mx-7">I don't have account! {<Link to="/SingUp" className="text-brandPrimar">Creata account</Link>}</h1>
+        <button type="submit" className="buttom mx-7" >
+          Submit Now
+        </button>
+        <h1 className="mx-7">
+          I don't have account!{" "}
+          {
+            <Link to="/SingUp" className="text-brandPrimar">
+              Creata account
+            </Link>
+          }
+        </h1>
       </form>
     </>
   );

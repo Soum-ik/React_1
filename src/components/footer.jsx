@@ -17,7 +17,7 @@ export default function Footer() {
                     <p>Copyright © 2023 SOUMIK SARKAR.</p>
                     <p>All rights reserved</p>
                     </div>
-                    <img src={img2} alt="" />
+                    <img src={img2} alt="" className="text-center sm:text-end" />
                 </div>
 
                     <div className="flex md:space-x-10 flex-col md:flex-row  text-center ">
