@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { FaBars, FaXmark } from "react-icons/fa6";
-import { Link } from "react-scroll";
 import logo from "../../src/assets/image/Logo.png";
+import { Link } from "react-router-dom"
 
 export default function Navbar() {
   const [isopenManu, setIsOpenManu] = useState(false);
@@ -76,7 +76,9 @@ export default function Navbar() {
               >
                 Login
               </a>
-              <button className="buttom">Sing up</button>
+              <button className="buttom">
+                  Sing Up
+              </button>
             </div>
 
             <div className=" md:hidden">

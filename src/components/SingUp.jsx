@@ -7,7 +7,7 @@ export default function SingUp() {
     <>
       <Navbar />
       <div
-        className=" grid md:grid-cols-2 grid-cols-1  max-h-full max-w-full gap-2 mx-12 pt-28     "
+        className=" grid md:grid-cols-2 grid-cols-1  max-h-full max-w-full gap-2 mx-12 pt-28"
       >
         <Illistion />
         <SingUpForm />

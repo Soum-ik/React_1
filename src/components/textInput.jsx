@@ -5,7 +5,7 @@ export default function TextInput({ icon, ...rest }) {
   return (
     <div className=" shadow w-full flex items-center border rounded-md mx-6 max-w-5xl px-3">
       <input
-        className=" border-none w-full  rounded"
+        className=" border-none outline-none w-full  rounded"
         {...rest}
       />
       <span className=" flex items-center justify-center">{icon} </span>
