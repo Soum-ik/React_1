@@ -1,7 +1,7 @@
 "use client";
 
 import { Carousel } from "flowbite-react";
-import illustion from "../assets/Agency/Frame_35.png";
+import illustion from "../assets/image/Frame_35.png";
 export default function Provider() {
   return (
     <>

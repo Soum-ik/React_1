@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { FaBars, FaXmark } from "react-icons/fa6";
-import { Link } from "react-scroll";
-import logo from "../../src/assets/Agency/Logo.png";
+import logo from "../../src/assets/image/Logo.png";
+import { Link } from "react-router-dom"
 
 export default function Navbar() {
   const [isopenManu, setIsOpenManu] = useState(false);
@@ -16,7 +16,7 @@ export default function Navbar() {
   };
 
   useEffect(() => {
-    const handleScroll = () => {
+    const handleScroll =  () => {
       if (window.scrollY > 100) {
         setIsSticky(true);
       } else {
@@ -57,7 +57,7 @@ export default function Navbar() {
             <ul className=" md:flex md:font-medium  space-x-3 hidden cursor-pointer">
               {naviItem.map(({ path, link }) => (
                 <Link
-                  className=" block text-xl text-gray-900 hover:text-brandPrimar first:font-medium md:hover:text-brandPrimar select-none"
+                  className=" block text-xl text-neutralDGrey hover:text-brandPrimar first:font-medium md:hover:text-brandPrimar select-none"
                   to={path}
                   key={path}
                   spy={true}
@@ -70,13 +70,11 @@ export default function Navbar() {
             </ul>
 
             <div className=" space-x-12 hidden md:flex items-center">
-              <a
-                href="/"
-                className=" hidden md:flex items-center text-brandPrimar hover:text-gray900"
-              >
-                Login
-              </a>
-              <button className="buttom">Sing up</button>
+              
+            <Link className="text-brandPrimar" to="/login">login</Link>
+              <button className="buttom">
+                  <Link to="/SingUp">Sing Up</Link>
+              </button> 
             </div>
 
             <div className=" md:hidden">

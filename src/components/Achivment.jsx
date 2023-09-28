@@ -1,6 +1,6 @@
-import icon1 from "../assets/Agency/Icon3.png";
-import icon2 from "../assets/Agency/Icon2.png";
-import icon3 from "../assets/Agency/Icon.png";
+import icon1 from "../assets/image/Icon3.png";
+import icon2 from "../assets/image/Icon2.png";
+import icon3 from "../assets/image/Icon.png";
 export default function Achivment() {
   return (
     <>

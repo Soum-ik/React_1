@@ -1,6 +1,6 @@
 // import { useState } from "react";
-import img from "../assets/Agency/Logo.png";
-import img2 from "../assets/Agency/social.png";
+import img from "../assets/image/Logo.png";
+import img2 from "../assets/image/social.png";
 
 export default function Footer() {
     // const [footer, setFooter] = useState("");
@@ -17,7 +17,7 @@ export default function Footer() {
                     <p>Copyright © 2023 SOUMIK SARKAR.</p>
                     <p>All rights reserved</p>
                     </div>
-                    <img src={img2} alt="" />
+                    <img src={img2} alt="" className="text-center sm:text-end" />
                 </div>
 
                     <div className="flex md:space-x-10 flex-col md:flex-row  text-center ">
@@ -53,7 +53,7 @@ export default function Footer() {
                             placeholder="Your email address"
                             name=""
                             id=""
-                            onClick={(e) =>set}
+                            onChange={(e) => e.target.value}
                         />
                         </div>
                     </div>

@@ -1,30 +1,20 @@
 import React from "react";
-import Navbar from "./components/Navbar";
-import Home from "./components/Home";
-import Service from "./components/Service";
-import About from "./components/about";
-import Customer from "./components/Customer";
-import Achivment from "./components/Achivment";
-import Unlock from "./components/unlock";
-import Community from "./components/communit_update";
-import Decription from "./components/Decription";
-import Footer from "./components/footer";
-import Users from "./components/use";
+
+import SingUp from "./components/SingUp";
+
+import { Routes, Route } from "react-router-dom";
+import Login from "./components/login";
+import HomePage from "./components/pages/home";
 
 function App() {
   return (
     <>
-      <Navbar />
-      <Home />
-      <Service />
-      <About />
-      <Achivment />
-      <Unlock/>
-      <Customer/>
-      <Community/>
-      <Users/>
-      <Decription/>
-      <Footer/>
+      <Routes>
+        <Route path="/" element={<HomePage/>}/>
+        
+        <Route path="/login" element={<Login/> }/>
+        <Route path="/SingUp" element={<SingUp/> }/>
+      </Routes>
     </>
   );
 }

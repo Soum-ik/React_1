@@ -2,6 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer utilities{
+  .display_block {
+    display: block;
+  }
+}
+
 @layer components {
   .buttom {
     @apply bg-brandPrimar text-white rounded px-3 py-2 transition-all duration-1000 hover:text-neutralDGrey;
